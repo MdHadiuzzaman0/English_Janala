@@ -33,7 +33,7 @@
             result.data.forEach((element) => {
               const btn = document.createElement("button");
               btn.className =
-                "btn btn-outline lesson-btn border-[#422AD5] text-[#422AD5] mt-8 ";
+                "btn btn-outline lesson-btn border-[#422AD5] text-[#422AD5] mt-2 ";
               btn.innerHTML = `<i class="fa-brands fa-leanpub"></i> Lesson ${element.level_no}`;
 
               // সরাসরি এখানে ক্লিক ইভেন্ট যোগ করা
@@ -74,7 +74,7 @@
         // if (currentLevel == levelNo) {
         //   cardInfo.innerHTML = `<section class=" bg-[#F8F8F8] w-11/12 mx-auto text-center py-20 rounded-xl mt-5 space-y-4 grid col-span-3">
         // <p class="font-bangla text-[#79716B] text-[14px]">আপনি এখনো কোন Lesson Select করেন ন</p>
-        // <p class="font-bangla text-[#292524] text-3xl">একটি Lesson Select করুন।</p>
+        // <p class="font-bangla text-[#292524] text-3xl">z</p>
         //     </section>`;
         //   currentLevel = null;
         //   return;
@@ -131,11 +131,11 @@
 
               cardDiv.innerHTML = `
               
-              <div class="space-y-3 text-center w-[447px] bg-white py-8 rounded-lg border-[#18181B]/20 border h-full flex flex-col justify-between">
+              <div class="space-y-3 text-center bg-white py-8 rounded-lg border-[#18181B]/20 border h-full flex flex-col justify-between">
               <h1 class="font-bold text-3xl">${cardElement.word ? cardElement.word : "word খুঁজে পাওয়া যায়নি"}</h1>
               <h3 class="font-medium text-[20px]">Meaning /Pronounciation</h3>
               <p class="text-[#18181B] font-semibold text-3xl font-bangla">"${cardElement.meaning ? cardElement.meaning : "অর্থ খুঁজে পাইনি"}/${cardElement.pronunciation ? cardElement.pronunciation : "pronunciation খুঁজে পাইনি"}"</p>
-              <div class="flex justify-evenly gap-[232px] items-center mt-7">
+              <div class="flex justify-between px-12 mt-7">
                  <img onclick="loadWordDetails(${cardElement.id})" src="./assets/Group 10.png" alt="" class="hover:bg-blue-300 rounded-xl">
                  <img onclick="pronounceWord('${cardElement.word}')"  src="./assets/Group 7.png" alt="" class="hover:bg-blue-300 rounded-xl">
               
